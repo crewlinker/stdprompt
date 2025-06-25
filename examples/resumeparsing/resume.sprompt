@@ -1,0 +1,13 @@
+---
+input:
+    type: object
+    additionalProperties: false
+    properties:
+        topic:
+            type: string
+output:
+    type: string
+data:
+    - testdata/*.json
+---
+Tell me a joke about topic: {{.topic}}
